@@ -7,7 +7,7 @@
 //   Template (Haml)
 // -------------------------------------
 //
-// .card
+// .card[.card--thin]
 //   / ...
 //
 // *************************************
@@ -18,3 +18,13 @@
   box-shadow: $b-boxShadow
   padding: $b-whitespace
   position: relative
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Thin ----- //
+
+.card--thin
+  box-shadow: none
+  padding: 0.25em 0.5em

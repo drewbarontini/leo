@@ -16,6 +16,8 @@
     .row
       .cell.cell--s.well
 
-        %main.content= yield
+        %main.content
+          = find_and_preserve do
+            = yield
 
     = javascript_include_tag  'application'
