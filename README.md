@@ -1,10 +1,5 @@
-Baseman (v1.0.3)
-================
-
-This is a base [Middleman](http://middlemanapp.com/) application. This
-sets all of the defaults that I'll generally set when building a new
-application on Middleman. Be sure to read all of the documentation to
-become familiar with Middleman before using this base setup.
+Book
+====
 
 Installing Middleman
 --------------------
@@ -124,8 +119,3 @@ production server.
 
 Another option is the [middleman-deploy](https://github.com/tvaughan/middleman-deploy) extension, which provides more deployment methods for rsync, ftp, sftp or git. Be sure to check it out!
 
-Credits
--------
-
-Big hat tip to [Arron Mabrey](https://github.com/arronmabrey) for the
-deploy scripts :)
