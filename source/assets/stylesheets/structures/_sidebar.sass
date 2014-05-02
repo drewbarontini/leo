@@ -15,7 +15,7 @@
 
 .sidebar
   @extend .boxSizing
-  background: darken($c-background, 5%)
+  background: darken($c-background, 10%)
   bottom: 0
   left: 0
   position: fixed
@@ -35,13 +35,14 @@
   display: block
   font-family: $f-header
   font-size: 80%
-  padding: $b-whitespace-s $b-whitespace
+  padding: $b-whitespace-s $b-whitespace-l
   &:hover,
   &:focus
-    background: darken($c-background, 12%)
+    background: darken($c-background, 20%)
     color: $c-base
 
 // Active
 
 .sidebar-link.is-active
-  background: $c-background
+  background: $c-highlight
+  color: $c-invert
