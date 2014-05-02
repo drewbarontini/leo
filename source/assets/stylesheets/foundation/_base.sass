@@ -15,6 +15,11 @@ html
 body
   font-size: 100%
 
+.content
+  margin-left: $sidebar-width
+  margin-top: $header-height
+  padding-top: $b-whitespace-l
+
 // -------------------------------------
 //   Block Content
 // -------------------------------------
@@ -32,7 +37,9 @@ li
 h1, .h1,
 h2, .h2,
 h3, .h3,
-h4, .h4
+h4, .h4,
+h5, .h5,
+h6, .h6
   font-family: $f-header
   font-weight: bold
   line-height: 1.2
@@ -51,6 +58,12 @@ h3, .h3
 h4, .h4
   font-size: 110%
 
+h5, .h5
+  font-size: 115%
+
+h6, .h6
+  font-size: 105%
+
 // -------------------------------------
 //   Inline Content
 // -------------------------------------
@@ -59,6 +72,7 @@ a
   border-bottom: $b-border
   color: $c-highlight
   text-decoration: none
+  transition: all 0.3s ease-in-out
   &:hover,
   &:focus
     border-bottom-color: $c-highlight

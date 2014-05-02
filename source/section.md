@@ -1,7 +1,7 @@
 ---
-title: Home
+title: Section
 type: page
-priority: 1
+priority: 2
 ---
 
 Heading

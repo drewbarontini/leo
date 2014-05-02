@@ -12,6 +12,10 @@ helpers do
     sitemap.resources.select { |resource| resource.data.type == 'page' }
       .sort_by { |r| r.data.priority.to_i }
   end
+
+  def is_page_active(page)
+    current_page.url == page
+  end
 end
 
 set :css_dir, 'assets/stylesheets'

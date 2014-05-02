@@ -1,0 +1,5 @@
+%aside.sidebar
+  %nav.nav
+    - get_pages().each do |page|
+      = link_to page.data.title, page.url, class: (is_page_active(page.url) ? 'sidebar-link is-active' : 'sidebar-link')
+
