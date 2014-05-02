@@ -10,6 +10,11 @@
 
   %body{ class: page_classes }
 
-    = yield
+    .row
+      .cell.well
+        = yield
+        - get_pages().each do |page|
+          %p= page.data.title
+          %p= page.url
 
     = javascript_include_tag  'application'
