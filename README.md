@@ -1,7 +1,9 @@
 Leo
 ===
 
-Leo is a Markdown, Middleman-powered writing environment. It allows you to quickly create Markdown files, and it automatically generates the sidebar sections for you. For example, just create `source/introduction.md`, and then add the following [Frontmatter]() at the top of the document.
+Leo is a Markdown, Middleman-powered writing environment. It allows you to quickly create Markdown files, and it automatically generates the sidebar sections for you. For example, just create `source/index.md`, and then add the following [Frontmatter]() at the top of the document.
+
+**Note**: Middleman will use the `source/index.md` file as the root file, so make sure that's what you first page is named. You can change the title to be whatever you'd like, though.
 
 ```yaml
 ---
