@@ -64,3 +64,5 @@ Deploying
 ---------
 
 If you'd like to deploy the site, add a `Rakefile` and take a look at the [Baseman](https://github.com/drewbarontini/baseman#deploying) deploy documentation.
+
+**Note**: Be sure to remove the `Rakefile` from the `.gitignore`!
