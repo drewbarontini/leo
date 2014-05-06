@@ -1,5 +1,21 @@
-Book
-====
+Leo
+===
+
+Leo is a Markdown, Middleman-powered writing environment. It allows you to quickly create Markdown files, and it automatically generates the sidebar sections for you. For example, just create `source/introduction.md`, and then add the following [Frontmatter]() at the top of the document.
+
+```yaml
+---
+title: Introduction # The page title
+type: page # Classify this document as a page
+priority: 1 # The priority number for proper sorting in the sidebar
+---
+```
+
+That's it! Now you'll have a nicely formatted book, with sections, that you can use to write your content.
+
+*Leo uses GitHub's Markdown parser, so you can follow the [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) document on the GitHub guides.*
+
+Now that you know the basics, you need to get everything set up to start writing.
 
 Installing Middleman
 --------------------
@@ -47,75 +63,4 @@ Or, if you're using Rbenv:
 Deploying
 ---------
 
-### To GitHub Pages
-
-Create a new file `Rakefile` at the root of your project, and paste
-in the following:
-
-```ruby
-desc "Generate flat files with Middleman"
-task :generate do
-  puts "## Generating site with Middleman"
-  system "./bin/middleman build --clean"
-  cd "build" do
-    system "git init"
-    system "git remote add origin REPO_URL"
-  end
-end
-
-desc "Push the build to the gh-pages branch on GitHub"
-task :push do
-  puts "## Deploying build to GitHub Pages"
-  cd "build" do
-    system "git add ."
-    system "git add -u"
-    system "git commit -m \"Site updated at #{Time.now.utc}\""
-    system "git push origin master:gh-pages --force"
-  end
-end
-
-desc "Generate flat files and deploy to GitHub Pages"
-task :deploy => [:generate, :push] do
-end
-```
-
-Replace the `REPO_URL` with your repositorie's URL. This assumes that
-you have a `gh-pages` branch that is serving up your site.
-
-You can now deploy by running `rake deploy` from your project's root.
-
-### To FTP Server Using rsync
-
-**Requirement:** You'll need to have SSH access to your server.
-
-Create a new file `Rakefile` at the root of your project, and paste
-in the following:
-
-```ruby
-namespace :deploy do
-  task :generate do
-    puts "## Generating site with Middleman"
-    system "./bin/middleman build --clean"
-  end
-
-  task :production => [:generate] do
-    system "rsync -avz --delete -e ssh ./build/ SSH_LOGIN_PATH"
-  end
-
-  task :staging => [:generate] do
-    system "rsync -avz --delete -e ssh ./build/ SSH_LOGIN_PATH"
-  end
-end
-```
-
-Replace the `SSH_LOGIN_PATH` with your own.
-
-
-You can now deploy to your staging server by running `rake deploy:staging`
-from your project's root. Use `rake deploy:production` to deploy to your
-production server.
-
-### Middleman Deploy
-
-Another option is the [middleman-deploy](https://github.com/tvaughan/middleman-deploy) extension, which provides more deployment methods for rsync, ftp, sftp or git. Be sure to check it out!
-
+If you'd like to deploy the site, add a `Rakefile` and take a look at the [Baseman](https://github.com/drewbarontini/baseman#deploying) deploy documentation.
