@@ -72,6 +72,15 @@ h6, .h6
   margin-bottom: $b-whitespace-s
   margin-top: $b-whitespace
 
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6
+  position: relative
+  &:hover > a
+    display: block
+
 h1, .h1
   font-size: 200%
 
@@ -79,8 +88,8 @@ h2, .h2
   border-bottom: $b-border
   font-size: 150%
   margin-bottom: $b-whitespace
-  padding-bottom: $b-whitespace-xs
   margin-top: $b-whitespace-l
+  padding-bottom: $b-whitespace-xs
 
 h3, .h3
   font-size: 125%
