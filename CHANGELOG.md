@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 1.2.0
+**May 23, 2014**
+
+- Add a estimated read time to each page
+
 ## Version 1.1.0
 **May 22, 2014**
 

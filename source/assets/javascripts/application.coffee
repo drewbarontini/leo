@@ -12,6 +12,14 @@ Leo.headingLinks = (options) ->
     el.prepend("<a class='anchor' href='##{text}'>#</a>")
 
 # -------------------------------------
+#   Read Time
+# -------------------------------------
+
+Leo.readTime = (options) ->
+  time = Math.ceil(options.text.split(' ').length / options.wordsPerMinute)
+  options.element.append("<b>#{time} minute read</b>")
+
+# -------------------------------------
 #   Slugify
 # -------------------------------------
 
@@ -26,6 +34,12 @@ jQuery ($) ->
 
   Leo.headingLinks({
     els: $('h2, h3, h4, h5, h6')
+  })
+
+  Leo.readTime({
+    wordsPerMinute: 200
+    text: $('.content').text()
+    element: $('.content h1')
   })
 
   $('.toggle').on 'click', (e) ->
