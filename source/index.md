@@ -24,6 +24,11 @@ priority: 1 # the numbered priority to order the sidebar
 ---
 ```
 
+Heading Links
+-------------
+
+If you hover over a heading, you'll see a little hash link. If you click it, you'll see the hash for the title appended to the URL for easy linking. This works for all headings `h2`-`h6`.
+
 Donezo!
 -------
 
