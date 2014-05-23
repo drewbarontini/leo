@@ -14,11 +14,13 @@ html
 
 body
   font-size: 100%
+  overflow-x: hidden
 
 .content
   margin-bottom: $b-whitespace-xl
-  margin-left: $sidebar-width
   padding-top: $b-whitespace-xs
+  .is-sidebar-open &
+    margin-left: $sidebar-width
 
 // -------------------------------------
 //   Block Content

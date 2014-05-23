@@ -9,10 +9,15 @@
 
   %body{ class: page_classes }
 
+    = link_to '#', class: 'toggle' do
+      .toggle-icn
+        .toggle-icn-stack
+          %b.srt Toggle
+
     = partial 'shared/sidebar'
 
     .row
-      .cell.cell--s.well
+      .cell.well
 
         %main.content
           = find_and_preserve do
