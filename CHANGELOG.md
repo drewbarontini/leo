@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 1.3.1
+**May 23, 2014**
+
+- Use a slash (`/`) as the page title delimiter
+
 ## Version 1.3.0
 **May 23, 2014**
 
