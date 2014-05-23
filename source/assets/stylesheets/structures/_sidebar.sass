@@ -8,8 +8,8 @@
 //   Template (Haml)
 // -------------------------------------
 //
-// .structure[.structure--modifier](.is-state)(.has-context)
-//   .structure-scaffolding
+// %aside.sidebar
+//   %a.sidebar-link{ href: '#' } Link
 //
 // *************************************
 
@@ -19,7 +19,7 @@
   bottom: 0
   left: 0
   position: fixed
-  top: $header-height
+  top: 0
   width: $sidebar-width
   z-index: 10
 
@@ -46,3 +46,4 @@
 .sidebar-link.is-active
   background: $c-highlight
   color: $c-invert
+

@@ -7,19 +7,16 @@
 //   Template (Haml)
 // -------------------------------------
 //
-// .element[.element--modifier](.is-state)
+// %header.header
+//   %h1.header-title Title
 //
 // *************************************
 
 .header
   @extend .boxSizing
+  background: $c-invert
   height: $header-height
-  left: 0
   padding: $b-whitespace
-  position: fixed
-  right: 0
-  top: 0
-  z-index: 20
 
 // -------------------------------------
 //   Scaffolding

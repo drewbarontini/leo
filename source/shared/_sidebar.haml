@@ -1,4 +1,8 @@
 %aside.sidebar
+
+  %header.header
+    %h1.header-title= data.leo.title
+
   %nav.nav
     - get_pages().each do |page|
       = link_to page.data.title, page.path, class: (is_page_active(page.url) ? 'sidebar-link is-active' : 'sidebar-link')
