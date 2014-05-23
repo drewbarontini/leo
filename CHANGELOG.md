@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 1.3.0
+**May 23, 2014**
+
+- Add page navigation
+
 ## Version 1.2.0
 **May 23, 2014**
 

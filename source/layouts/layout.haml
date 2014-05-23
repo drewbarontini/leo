@@ -23,5 +23,20 @@
           = find_and_preserve do
             = yield
 
+          - if get_page(current_page.data.priority.to_i - 1) or get_page(current_page.data.priority.to_i + 1)
+            %ul.pager
+
+              - if get_page(current_page.data.priority.to_i - 1)
+                - get_page(current_page.data.priority.to_i - 1).each do |p|
+                  %li.pager-item
+                    = link_to p.path do
+                      &larr; Previous page
+
+              - if get_page(current_page.data.priority.to_i + 1)
+                - get_page(current_page.data.priority.to_i + 1).each do |p|
+                  %li.pager-item
+                    = link_to p.path do
+                      Next page &rarr;
+
     = javascript_include_tag  'http://code.jquery.com/jquery-1.11.1.min.js'
     = javascript_include_tag  'application'

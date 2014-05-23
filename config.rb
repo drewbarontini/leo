@@ -15,6 +15,10 @@ helpers do
       .sort_by { |r| r.data.priority.to_i }
   end
 
+  def get_page(priority)
+    sitemap.resources.select { |resource| resource.data.type == 'page' and resource.data.priority == priority }
+  end
+
   def is_page_active(page)
     current_page.url == page
   end
