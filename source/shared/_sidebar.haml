@@ -1,7 +1,7 @@
 %aside.sidebar
 
   %header.header
-    %h1.header-title= data.leo.title
+    %h1.header-title= link_to data.leo.title, '/index.html'
 
   %nav.nav
     - get_pages().each do |page|
