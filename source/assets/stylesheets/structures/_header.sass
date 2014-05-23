@@ -16,7 +16,7 @@
   @extend .boxSizing
   background: $c-invert
   height: $header-height
-  padding: $b-whitespace
+  padding: 0 $b-whitespace-s
   position: relative
 
 // -------------------------------------
@@ -26,9 +26,11 @@
 // ----- Title ----- //
 
 .header-title
-  font-size: $b-fontSize-l
+  font-size: $b-fontSize-m
   font-weight: normal
-  margin-top: -0.5em
+  line-height: $header-height
+  margin-top: 0
+  text-transform: uppercase
   > a
     border: 0
     color: $c-subdue
