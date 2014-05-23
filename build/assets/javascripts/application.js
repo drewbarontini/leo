@@ -1,1 +1,1 @@
-(function(){}).call(this);
+(function(){var e;e={},e.headingLinks=function(r){return r.els.each(function(){var r,n;return r=$(this),n=e.slugify(r.text()),r.attr("id",n),r.prepend("<a class='anchor' href='#"+n+"'>#</a>")})},e.slugify=function(e){return e.toLowerCase().replace(/\s+/g,"-").replace(/[^\w\-]+/g,"").replace(/\-\-+/g,"-").replace(/^-+/,"").replace(/-+$/,"")},jQuery(function(r){return e.headingLinks({els:r("h2, h3, h4, h5, h6")})})}).call(this);
