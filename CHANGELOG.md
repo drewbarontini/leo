@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 1.3.2
+**May 23, 2014**
+
+- Small style adjustments to the header/sidebar
+
 ## Version 1.3.1
 **May 23, 2014**
 

@@ -16,7 +16,6 @@
   @extend .boxSizing
   background: $c-invert
   height: $header-height
-  padding: 0 $b-whitespace-s
   position: relative
 
 // -------------------------------------
@@ -30,6 +29,7 @@
   font-weight: normal
   line-height: $header-height
   margin-top: 0
+  padding-left: $b-whitespace - 0.2 // FIXME: Magic number!
   text-transform: uppercase
   > a
     border: 0
