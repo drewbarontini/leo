@@ -19,11 +19,11 @@ That's it! Now you'll have a nicely formatted book, with sections, that you can 
 
 Now that you know the basics, you need to get everything set up to start writing.
 
-Installing Middleman
---------------------
+Setup
+-----
 
 ```shell
-gem install middleman
+gem install bundler
 ```
 
 Then run:
