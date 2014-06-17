@@ -10,7 +10,7 @@
       - else
         - if page.data.children?
           = link_to page.data.title, "/#{page.path}", class: (is_page_active(page.url) ? 'sidebar-link sidebar-link--parent is-active' : 'sidebar-link')
-          .sidebar-nav-sub.is-hidden
+          .sidebar-nav-sub{ class: ('is-active' if is_parent_page_active(page.url))}
             - get_nested_pages(page.data.title).each do |nested_page|
               = link_to nested_page.data.title, "/#{nested_page.path}", class: (is_page_active(nested_page.url) ? 'sidebar-link sidebar-link--sub is-active' : 'sidebar-link sidebar-link--sub')
 

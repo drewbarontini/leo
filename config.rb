@@ -27,6 +27,10 @@ helpers do
   def is_page_active(page)
     current_page.url == page
   end
+
+  def is_parent_page_active(page)
+    current_page.url.match(page)
+  end
 end
 
 set :css_dir, 'assets/stylesheets'

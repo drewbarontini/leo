@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 1.4.1
+06/16/14
+
+- Update the nested sidebar pages to only show when parent or self is active
+
 ## Version 1.4.0
 06/16/14
 
