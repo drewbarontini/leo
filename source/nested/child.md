@@ -1,13 +1,13 @@
 ---
-title: Child Page
+title: Child
 type: page
 nested: true
-parent: Nested Page
+parent: Parent
 priority: 4
 ---
 
-Child Page
-==========
+Child
+=====
 
 This is a child page that belongs to a parent.
 
