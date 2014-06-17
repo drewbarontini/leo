@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 1.5.0
+06/17/14
+
+- Add more extensive configuration variables
+
 ## Version 1.4.2
 06/17/14
 

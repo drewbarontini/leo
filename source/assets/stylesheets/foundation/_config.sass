@@ -9,71 +9,82 @@
 //   @font-face
 // -------------------------------------
 
-@import "http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic"
-@import "http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700"
+// ----- Variables ----- //
+
+$f-base-src: 'http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic' !default
+$f-header-src: 'http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' !default
+
+// ----- Imports ----- //
+
+@if $f-base-src == $f-header-src
+  @import url($f-base-src)
+@else
+  @import url($f-base-src)
+  @import url($f-header-src)
 
 // -------------------------------------
 //   Variables
 // -------------------------------------
 
-// ----- Palette ----- //
-
-$clouds: #ecf0f1
-$concrete: #95a5a6
-$grey: #666
-$steel: #333
-$sea: #2c3e50
-$white: #fff
-
 // ----- Base ----- //
 
-$b-borderColor: lighten($concrete, 20%)
-$b-borderStyle: solid
-$b-borderWidth: 2px
-$b-border: $b-borderWidth $b-borderStyle $b-borderColor
-$b-borderRadius: 3px
-$b-boxShadow: 0 2px 0 rgba($steel, 0.25)
-$b-fontSize: 16px
-$b-fontSize-xs: 60%
-$b-fontSize-s: 75%
-$b-fontSize-m: 90%
-$b-fontSize-l: 115%
-$b-fontSize-xl: 150%
-$b-lineHeight: 1.6
-$b-maxWidth: 36.5em // ~580px
-$b-whitespace: 1.25em // ~20px
-$b-whitespace-xs: 0.25 * $b-whitespace
-$b-whitespace-s: 0.5 * $b-whitespace
-$b-whitespace-l: 2 * $b-whitespace
-$b-whitespace-xl: 4 * $b-whitespace
+$b-borderColor: lighten(#95a5a6, 20%) !default
+$b-borderStyle: solid !default
+$b-borderWidth: 2px !default
+$b-border: $b-borderWidth $b-borderStyle $b-borderColor !default
+$b-borderRadius: 3px !default
+$b-boxShadow: 0 2px 0 rgba(#333, 0.25) !default
+$b-fontSize: 16px !default
+$b-fontSize-xs: 60% !default
+$b-fontSize-s: 75% !default
+$b-fontSize-m: 90% !default
+$b-fontSize-l: 115% !default
+$b-fontSize-xl: 150% !default
+$b-lineHeight: 1.6 !default
+$b-maxWidth: 36.5em !default
+$b-whitespace: 1.25em !default
+$b-whitespace-xs: 0.25 * $b-whitespace !default
+$b-whitespace-s: 0.5 * $b-whitespace !default
+$b-whitespace-l: 2 * $b-whitespace !default
+$b-whitespace-xl: 4 * $b-whitespace !default
 
 // ----- Colors ----- //
 
-$c-background: $clouds
-$c-base: $steel
-$c-highlight: $sea
-$c-invert: $white
-$c-secondary: $grey
-$c-subdue: $concrete
+$c-background: #ecf0f1 !default
+$c-base: #333 !default
+$c-highlight: #2c3e50 !default
+$c-invert: #fff !default
+$c-secondary: #666 !default
+$c-subdue: #95a5a6 !default
 
 // ----- Fonts ----- //
 
-$f-base: 'Merriweather', serif
-$f-header: 'Open Sans', serif
-$f-mono: Courier, monospace
+$f-base: 'Merriweather', serif !default
+$f-header: 'Open Sans', serif !default
+$f-mono: Courier, monospace !default
 
 // ----- Header ----- //
 
-$header-height: 45px
+$header-background: $c-invert !default
+$header-height: 45px !default
+$header-title-align: left !default
+$header-title-link-color: $c-subdue !default
+$header-title-link-hover-color: $c-base !default
 
 // ----- Sidebar ----- //
 
+$sidebar-background: darken($c-background, 10%) !default
 $sidebar-collapsible: true !default
-$sidebar-width: 15.625em // ~250px
+$sidebar-link-color: $c-secondary !default
+$sidebar-link-active-background: $c-highlight !default
+$sidebar-link-active-color: $c-invert !default
+$sidebar-link-hover-background: darken($c-background, 20%) !default
+$sidebar-link-hover-color: $c-base !default
+$sidebar-width: 15.625em !default
 
 // ----- Toggle ----- //
 
-$toggle-color: $c-subdue
-$toggle-height: 3px
-$toggle-width: 24px
+$toggle-color: $c-subdue !default
+$toggle-height: 3px !default
+$toggle-width: 24px !default
 

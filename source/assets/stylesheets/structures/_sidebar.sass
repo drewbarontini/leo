@@ -18,7 +18,7 @@
   @if $sidebar-collapsible
     +transition-transform(0.3s ease-in-out)
     +transform(translateX(-100%))
-  background: darken($c-background, 10%)
+  background: $sidebar-background
   bottom: 0
   left: 0
   position: fixed
@@ -42,15 +42,15 @@
 
 .sidebar-link
   border: 0
-  color: $c-secondary
+  color: $sidebar-link-color
   display: block
   font-family: $f-header
   font-size: 80%
   padding: $b-whitespace-s $b-whitespace
   &:hover,
   &:focus
-    background: darken($c-background, 20%)
-    color: $c-base
+    background: $sidebar-link-hover-background
+    color: $sidebar-link-hover-color
 
 // Sub
 
@@ -60,8 +60,8 @@
 // Active
 
 .sidebar-link.is-active
-  background: $c-highlight
-  color: $c-invert
+  background: $sidebar-link-active-background
+  color: $sidebar-link-active-color
 
 // ----- Navigation ----- //
 
