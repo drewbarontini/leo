@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 1.4.0
+06/16/14
+
+- Add support for nested pages
+
 ## Version 1.3.3
 06/09/14
 

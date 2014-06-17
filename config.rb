@@ -19,6 +19,11 @@ helpers do
     sitemap.resources.select { |resource| resource.data.type == 'page' and resource.data.priority == priority }
   end
 
+  def get_nested_pages(title)
+    sitemap.resources.select { |resource| resource.data.type == 'page' and resource.data.nested == true and resource.data.parent == title }
+      .sort_by { |r| r.data.priority.to_i }
+  end
+
   def is_page_active(page)
     current_page.url == page
   end

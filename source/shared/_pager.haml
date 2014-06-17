@@ -4,12 +4,12 @@
     - if get_page(current_page.data.priority.to_i - 1)
       - get_page(current_page.data.priority.to_i - 1).each do |p|
         %li.pager-item
-          = link_to p.path do
+          = link_to "/#{p.path}" do
             &larr; Previous page
 
     - if get_page(current_page.data.priority.to_i + 1)
       - get_page(current_page.data.priority.to_i + 1).each do |p|
         %li.pager-item
-          = link_to p.path do
+          = link_to "/#{p.path}" do
             Next page &rarr;
 
