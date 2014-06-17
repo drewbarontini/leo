@@ -48,10 +48,19 @@ That's it! Now you'll have a nicely formatted book, with sections, that you can 
 
 *Leo uses GitHub's Markdown parser, so you can follow the [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) document on the GitHub guides.*
 
-Now that you know the basics, you need to get everything set up to start writing.
+Standard Sidebar
+---------------
+
+If you don't want a collapsed sidebar with a hamburger menu, then add the following to `source/assets/stylesheets/_config.sass`:
+
+```sass
+$sidebar-collapsible: false
+```
 
 Setup
 -----
+
+Now that you know the basics, you need to get everything set up to start writing.
 
 ```shell
 gem install bundler
