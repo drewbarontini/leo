@@ -19,7 +19,10 @@ body
 .content
   margin-bottom: $b-whitespace-xl
   padding-top: $b-whitespace-xs
-  .is-sidebar-open &
+  @if $sidebar-collapsible
+    .is-sidebar-open &
+      margin-left: $sidebar-width
+  @else
     margin-left: $sidebar-width
 
 // -------------------------------------

@@ -7,7 +7,7 @@
 //   Template (Haml)
 // -------------------------------------
 //
-// .cell[.cell--s]
+// .cell
 //
 // *************************************
 
@@ -16,6 +16,9 @@
   margin-right: auto
   max-width: $b-maxWidth
   position: relative
-  .is-sidebar-open &
+  @if $sidebar-collapsible
+    .is-sidebar-open &
+      max-width: $b-maxWidth + $sidebar-width
+  @else
     max-width: $b-maxWidth + $sidebar-width
 

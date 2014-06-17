@@ -13,7 +13,10 @@
 
 .toggle
   border: 0
-  display: block
+  @if $sidebar-collapsible
+    display: block
+  @else
+    display: none
   height: 5 * $toggle-height
   left: $b-whitespace
   position: fixed

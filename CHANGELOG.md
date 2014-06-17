@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 1.4.2
+06/17/14
+
+- Add ability to make the sidebar expanded always
+
 ## Version 1.4.1
 06/16/14
 
