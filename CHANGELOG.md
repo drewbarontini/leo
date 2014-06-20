@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 1.5.5
+06/20/14
+
+- Add configuration variable for the sidebar link font-size
+
 ## Version 1.5.4
 06/20/14
 
