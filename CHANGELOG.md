@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 1.7.1
+06/20/14
+
+- Adjust the heading spacing responsively
+- Remove unused 'grid' component
+
 ## Version 1.7.0
 06/20/14
 
