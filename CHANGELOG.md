@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 1.5.3
+06/20/14
+
+- Add configuration variable for the reading time tag
+
 ## Version 1.5.2
 06/20/14
 
