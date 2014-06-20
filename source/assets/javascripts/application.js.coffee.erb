@@ -1,4 +1,9 @@
-Leo = {}
+# -------------------------------------
+#   Setup
+# -------------------------------------
+
+@Leo = {}
+@Leo.Pager = {}
 
 # -------------------------------------
 #   Heading Links
@@ -18,6 +23,52 @@ Leo.headingLinks = (options) ->
 Leo.readTime = (options) ->
   time = Math.ceil(options.text.split(' ').length / options.wordsPerMinute)
   options.element.append("<b>#{time} minute read</b>")
+
+# -------------------------------------
+#   Pager
+# -------------------------------------
+
+Leo.Pager = do ->
+
+  pageIndex = 0
+
+  pages = []
+
+  shortcuts =
+    'next': 39
+    'prev': 37
+
+  init = (id) ->
+    pageIndex = id
+    getPages()
+    setEventHandlers()
+
+  getPages = ->
+    <% get_pages.each do |p| %>
+    pages.push("<%= p.url %>")
+    <% end %>
+
+  setEventHandlers = ->
+    $(document).on 'keydown', (e) ->
+      switch getKeyCode(e)
+        when shortcuts.next then gotoPage('next')
+        when shortcuts.prev then gotoPage('prev')
+
+  getKeyCode = (e) ->
+    e = e || window.event
+    charCode = e.keyCode || e.which
+    charCode
+
+  gotoPage = (dir) ->
+    switch dir
+      when 'next'
+        unless pageIndex == pages.length
+          window.location = pages[pageIndex]
+      when 'prev'
+        unless pageIndex == 1
+          window.location = pages[pageIndex - 2]
+
+  init: init
 
 # -------------------------------------
 #   Slugify
@@ -43,6 +94,8 @@ jQuery ($) ->
     element: $('.content h1')
   })
   <% end %>
+
+  Leo.Pager.init( $('body').data('id') )
 
   $('.toggle').on 'click', (e) ->
     e.preventDefault()
