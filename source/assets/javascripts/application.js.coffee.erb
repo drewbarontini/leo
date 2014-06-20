@@ -1,5 +1,6 @@
 # -------------------------------------
 #   Setup
+#   -> Namespace setup
 # -------------------------------------
 
 @Leo = {}
@@ -7,6 +8,9 @@
 
 # -------------------------------------
 #   Heading Links
+#   -> Adds an anchor link next to each heading
+#
+#   options.els - the heading elements
 # -------------------------------------
 
 Leo.headingLinks = (options) ->
@@ -18,6 +22,11 @@ Leo.headingLinks = (options) ->
 
 # -------------------------------------
 #   Read Time
+#   -> Adds an estimated reading time to each page
+#
+#   options.text - the text of the page
+#   options.element - the element to append the reading time to
+#   options.wordsPerMinute - the words-per-minute to calculate against
 # -------------------------------------
 
 Leo.readTime = (options) ->
@@ -26,6 +35,9 @@ Leo.readTime = (options) ->
 
 # -------------------------------------
 #   Pager
+#   -> Adds keyboard navigation for pages
+#
+#   id - the page id
 # -------------------------------------
 
 Leo.Pager = do ->
@@ -72,6 +84,9 @@ Leo.Pager = do ->
 
 # -------------------------------------
 #   Slugify
+#   -> Converts a string into a title slug
+#
+#   text - the text to convert
 # -------------------------------------
 
 Leo.slugify = (text) ->
