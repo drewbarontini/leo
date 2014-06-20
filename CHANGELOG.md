@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 1.5.1
+06/20/14
+
+- Add nested page title, if present
+
 ## Version 1.5.0
 06/17/14
 
