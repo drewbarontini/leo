@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 1.5.2
+06/20/14
+
+- Add variable for setting the sub navigation background
+
 ## Version 1.5.1
 06/20/14
 
