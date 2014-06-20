@@ -1,5 +1,12 @@
 # Changelog
 
+## Version 1.6.0
+06/20/14
+
+- Add keyboard navigation for pages
+- Add better comments to the JavaScript
+- Hide heading anchor until tablet-sized viewport
+
 ## Version 1.5.5
 06/20/14
 
