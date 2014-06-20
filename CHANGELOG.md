@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 1.7.0
+06/20/14
+
+- Responsive down to mobile!
+
 ## Version 1.6.0
 06/20/14
 
