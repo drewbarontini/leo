@@ -53,16 +53,16 @@ Standard Sidebar
 
 If you don't want a collapsed sidebar with a hamburger menu, then add the following to `source/assets/stylesheets/_config.sass`:
 
+```sass
+$sidebar-collapsible: false
+```
+
 Overriding Styles
 -----------------
 
 If you need to override any of the styling, open up `source/assets/stylesheets/foundation/_config.sass`, and then duplicated any variable you want to override into the `source/assets/stylesheets/_config.sass` file.
 
 **Note**: Be sure to remove the `!default` flag!
-
-```sass
-$sidebar-collapsible: false
-```
 
 Setup
 -----
