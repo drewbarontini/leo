@@ -82,8 +82,9 @@ h4, .h4,
 h5, .h5,
 h6, .h6
   position: relative
-  &:hover > a
-    display: block
+  +respond-to($breakpoint-tablet)
+    &:hover > a
+      display: block
 
 h1, .h1
   font-size: 200%
