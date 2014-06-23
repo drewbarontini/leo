@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 1.7.3
+06/23/14
+
+- Fix a responsive issues with the sidebar
+
 ## Version 1.7.2
 06/23/14
 
