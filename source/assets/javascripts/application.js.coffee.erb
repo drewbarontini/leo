@@ -57,8 +57,13 @@ Leo.Pager = do ->
 
   getPages = ->
     <% get_pages.each do |p| %>
-    pages.push("<%= p.url %>")
+      <% if build? %>
+      pages.push("<%= data.leo.subdirectory %><%= p.url %>")
+      <% else %>
+      pages.push("<%= p.url %>")
+      <% end %>
     <% end %>
+    console.log pages
 
   setEventHandlers = ->
     $(document).on 'keydown', (e) ->

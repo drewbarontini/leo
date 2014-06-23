@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 1.7.2
+06/23/14
+
+- Fix the keyboard shortcuts if application is in a subdirectory
+
 ## Version 1.7.1
 06/20/14
 
