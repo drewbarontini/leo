@@ -64,6 +64,11 @@ If you need to override any of the styling, open up `source/assets/stylesheets/f
 
 **Note**: Be sure to remove the `!default` flag!
 
+Subdirectories
+--------------
+
+If you put your application within a subdirectory and not the root, in order for the keyboard shortcuts to work properly, you'll need to specify the subdirectory name in `data/leo.yml`. There is an example in there already.
+
 Setup
 -----
 
