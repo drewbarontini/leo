@@ -1,67 +1,186 @@
-# Changelog
+Changelog
+=========
 
-## Version 1.7.3
-06/23/14
+1.7.3 - 2014-06-23
+------------------
 
-- Fix a responsive issues with the sidebar
+### Added
 
-## Version 1.7.2
-06/23/14
+- Nothing
 
-- Fix the keyboard shortcuts if application is in a subdirectory
+### Removed
 
-## Version 1.7.1
-06/20/14
+- Nothing
 
-- Adjust the heading spacing responsively
-- Remove unused 'grid' component
+### Fixed
 
-## Version 1.7.0
-06/20/14
+- Responsive issues with the sidebar
+
+1.7.2 - 2014-06-23
+------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- The keyboard shortcuts, if application is in a subdirectory
+
+1.7.1 - 2014-06-20
+------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Unused `grid` component
+
+### Fixed
+
+- The heading spacing responsively
+
+1.7.0 - 2014-06-20
+------------------
+
+### Added
 
 - Responsive down to mobile!
 
-## Version 1.6.0
-06/20/14
+### Removed
 
-- Add keyboard navigation for pages
-- Add better comments to the JavaScript
+- Nothing
+
+### Fixed
+
+- Nothing
+
+1.6.0 - 2014-06-20
+------------------
+
+### Added
+
+- Keyboard navigation for pages
+- Better comments to the JavaScript
+
+### Removed
+
+- Nothing
+
+### Fixed
+
 - Hide heading anchor until tablet-sized viewport
 
-## Version 1.5.5
-06/20/14
+1.5.5 - 2014-06-20
+------------------
+
+### Added
 
 - Add configuration variable for the sidebar link font-size
 
-## Version 1.5.4
-06/20/14
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
+1.5.4 - 2014-06-20
+------------------
+
+### Added
 
 - Wrap articles in article element
 
-## Version 1.5.3
-06/20/14
+### Removed
 
-- Add configuration variable for the reading time tag
+- Nothing
 
-## Version 1.5.2
-06/20/14
+### Fixed
 
-- Add variable for setting the sub navigation background
+- Nothing
 
-## Version 1.5.1
-06/20/14
+1.5.3 - 2014-06-20
+------------------
 
-- Add nested page title, if present
+### Added
 
-## Version 1.5.0
-06/17/14
+- Configuration variable for the reading time tag
 
-- Add more extensive configuration variables
+### Removed
 
-## Version 1.4.2
-06/17/14
+- Nothing
 
-- Add ability to make the sidebar expanded always
+### Fixed
+
+- Nothing
+
+1.5.2 - 2014-06-20
+------------------
+
+### Added
+
+- Variable for setting the sub-navigation background
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
+1.5.1 - 2014-06-20
+------------------
+
+### Added
+
+- Nested page title, if present
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
+1.5.0 - 2014-06-17
+------------------
+
+### Added
+
+- More extensive configuration variables
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
+1.4.2 - 2014-06-17
+------------------
+
+### Added
+
+- Ability to make the sidebar expanded always
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
 
 ## Version 1.4.1
 06/16/14
