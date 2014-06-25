@@ -182,48 +182,137 @@ Changelog
 
 - Nothing
 
-## Version 1.4.1
-06/16/14
+1.4.1 - 2014-06-16
+------------------
+
+### Added
 
 - Update the nested sidebar pages to only show when parent or self is active
 
-## Version 1.4.0
-06/16/14
+### Removed
 
-- Add support for nested pages
+- Nothing
 
-## Version 1.3.3
-06/09/14
+### Fixed
+
+- Nothing
+
+1.4.0 - 2014-06-16
+------------------
+
+### Added
+
+- Support for nested pages
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
+1.3.3 - 2014-06-09
+------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
 
 - Update to the latest version of [MVCSS](http://mvcss.github.io/)
 
-## Version 1.3.2
-05/23/14
+1.3.2 - 2014-05-23
+------------------
+
+### Added
 
 - Small style adjustments to the header/sidebar
 
-## Version 1.3.1
-05/23/14
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
+1.3.1 - 2014-05-23
+------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
 
 - Use a slash (`/`) as the page title delimiter
 
-## Version 1.3.0
-05/23/14
+1.3.0 - 2014-05-23
+------------------
 
-- Add page navigation
+### Added
 
-## Version 1.2.0
-05/23/14
+- Page navigation
 
-- Add a estimated read time to each page
+### Removed
 
-## Version 1.1.0
-05/22/14
+- Nothing
 
-- Add the ability to toggle the sidebar
+### Fixed
 
-## Version 1.0.0
-05/06/14
+- Nothing
+
+1.2.0 - 2014-05-23
+------------------
+
+### Added
+
+- Estimated read time to each page
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
+1.1.0 - 2014-05-22
+------------------
+
+### Added
+
+- Ability to toggle the sidebar
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
+1.0.0 - 2014-05-06
+------------------
+
+### Added
 
 - Initial version applied
 
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
