@@ -1,6 +1,21 @@
 Changelog
 =========
 
+1.7.4 - 2014-07-01
+------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Update to latest MVCSS
+
 1.7.3 - 2014-06-23
 ------------------
 
@@ -139,6 +154,7 @@ Changelog
 
 1.5.1 - 2014-06-20
 ------------------
+<<<<<<< Updated upstream
 
 ### Added
 
@@ -165,6 +181,34 @@ Changelog
 
 ### Fixed
 
+=======
+
+### Added
+
+- Nested page title, if present
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
+1.5.0 - 2014-06-17
+------------------
+
+### Added
+
+- More extensive configuration variables
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+>>>>>>> Stashed changes
 - Nothing
 
 1.4.2 - 2014-06-17
@@ -194,6 +238,7 @@ Changelog
 - Nothing
 
 ### Fixed
+<<<<<<< Updated upstream
 
 - Nothing
 
@@ -202,6 +247,16 @@ Changelog
 
 ### Added
 
+=======
+
+- Nothing
+
+1.4.0 - 2014-06-16
+------------------
+
+### Added
+
+>>>>>>> Stashed changes
 - Support for nested pages
 
 ### Removed
