@@ -1,6 +1,21 @@
 Changelog
 =========
 
+1.7.5 - 2014-07-01
+------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Move 'Foundation - Tools' to bottom of application Sass
+
 1.7.4 - 2014-07-01
 ------------------
 
