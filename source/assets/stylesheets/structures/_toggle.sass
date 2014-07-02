@@ -16,7 +16,7 @@
   @if $sidebar-collapsible
     display: block
   @else
-    +respond-to($breakpoint-tablet)
+    +respond-to($breakpoint-s)
       display: none
   height: 5 * $toggle-height
   left: $b-space
@@ -25,7 +25,7 @@
   -webkit-backface-visibility: hidden
   width: $toggle-width
   z-index: 20
-  +respond-to($breakpoint-tablet)
+  +respond-to($breakpoint-s)
     position: fixed
 
 // -------------------------------------

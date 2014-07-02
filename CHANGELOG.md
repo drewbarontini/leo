@@ -1,6 +1,22 @@
 Changelog
 =========
 
+1.7.6 - 2014-07-02
+------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Use the `em()` function for all `em` values
+- Change `$breakpoint-tablet`, `$breakpoint-desk` to `$breakpoint-s`, `$breakpoint-m`
+
 1.7.5 - 2014-07-01
 ------------------
 

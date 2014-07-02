@@ -17,7 +17,7 @@ body
   &.is-sidebar-open
     overflow-y: hidden
     position: fixed
-    +respond-to($breakpoint-tablet)
+    +respond-to($breakpoint-s)
       position: static
 
 .content
@@ -29,15 +29,15 @@ body
     .is-sidebar-open &
       +transform(translateX($sidebar-width))
       margin-left: 0
-      +respond-to($breakpoint-tablet)
+      +respond-to($breakpoint-s)
         +transform(translateX(0))
         margin-left: $sidebar-width
   @else
     .is-sidebar-open &
       +transform(translateX($sidebar-width))
-      +respond-to($breakpoint-tablet)
+      +respond-to($breakpoint-s)
         +transform(translateX(0))
-    +respond-to($breakpoint-tablet)
+    +respond-to($breakpoint-s)
       margin-left: $sidebar-width
 
 // -------------------------------------
@@ -91,9 +91,9 @@ h6, .h6
   margin-bottom: $b-space-s
   margin-top: $b-space
   @if $sidebar-collapsible == false
-    +respond-to($breakpoint-tablet)
+    +respond-to($breakpoint-s)
       margin-top: 0
-  +respond-to($breakpoint-desk)
+  +respond-to($breakpoint-s)
     margin-top: $b-space
 
 h2, .h2,
@@ -102,7 +102,7 @@ h4, .h4,
 h5, .h5,
 h6, .h6
   position: relative
-  +respond-to($breakpoint-desk)
+  +respond-to($breakpoint-s)
     &:hover > a
       display: block
 
