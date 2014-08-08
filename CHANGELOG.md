@@ -10,7 +10,7 @@ Changelog
 
 ### Removed
 
-- Remove `console.log` call in application JS
+- `console.log` call in application JS
 
 ### Fixed
 
