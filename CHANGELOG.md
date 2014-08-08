@@ -1,6 +1,21 @@
 Changelog
 =========
 
+1.7.8 - 2014-08-08
+------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Remove `console.log` call in application JS
+
+### Fixed
+
+- Nothing
+
 1.7.7 - 2014-07-02
 ------------------
 
