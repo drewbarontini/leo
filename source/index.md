@@ -19,7 +19,6 @@ Next, you need to add some [Middleman Frontmatter](http://middlemanapp.com/basic
 ---
 title: Welcome # the page title
 type: page # classify it as a page
-priority: 1 # the numbered priority to order the sidebar
 ---
 ```
 
