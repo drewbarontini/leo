@@ -1,6 +1,21 @@
 Changelog
 =========
 
+1.9.3 - 2014-12-10
+------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Update link styles
+
 1.9.2 - 2014-12-10
 ------------------
 
