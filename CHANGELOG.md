@@ -1,6 +1,21 @@
 Changelog
 =========
 
+1.9.2 - 2014-12-10
+------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Unnecessary check in `source/shared/_pager.haml`
+
+### Fixed
+
+- Nothing
+
 1.9.1 - 2014-12-10
 ------------------
 
