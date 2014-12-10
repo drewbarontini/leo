@@ -32,11 +32,6 @@ helpers do
       .sort_by { |r| get_page_priority(r.data) }
   end
 
-  def parse_nested_title(title)
-    new_title = title.gsub(/.*\s-\s(.*)/, '\1')
-    new_title
-  end
-
   def is_page_active(page)
     current_page.url == page
   end

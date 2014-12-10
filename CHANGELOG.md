@@ -1,6 +1,21 @@
 Changelog
 =========
 
+1.9.1 - 2014-12-10
+------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Unnecessary method in `config.rb`
+
+### Fixed
+
+- Nothing
+
 1.9.0 - 2014-12-10
 ------------------
 
