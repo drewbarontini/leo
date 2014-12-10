@@ -11,7 +11,7 @@
 
     = stylesheet_link_tag 'application'
 
-  %body{ class: page_classes, 'data-id' => current_page.data.priority }
+  %body{ class: page_classes, 'data-id' => get_page_priority(current_page.data.title) }
 
     = link_to '#', class: 'toggle' do
       .toggle-icn

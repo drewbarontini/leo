@@ -3,7 +3,6 @@ title: Another Child
 type: page
 nested: true
 parent: Parent
-priority: 5
 ---
 
 Another Child

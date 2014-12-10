@@ -4,7 +4,7 @@
     %h1.header-title= link_to data.leo.title, '/index.html'
 
   %nav.sidebar-nav
-    - get_pages().each do |page|
+    - get_pages.each do |page|
       - unless page.data.nested? or page.data.children?
         = link_to page.data.title, "/#{page.path}", class: (is_page_active(page.url) ? 'sidebar-link is-active' : 'sidebar-link')
       - else

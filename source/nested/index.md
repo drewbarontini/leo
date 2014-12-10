@@ -1,7 +1,6 @@
 ---
 title: Parent
 type: page
-priority: 3
 children: true
 ---
 

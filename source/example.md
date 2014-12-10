@@ -1,7 +1,6 @@
 ---
 title: Example
 type: page
-priority: 2
 ---
 
 Example

@@ -1,7 +1,6 @@
 ---
 title: Welcome
 type: page
-priority: 1
 ---
 
 Welcome

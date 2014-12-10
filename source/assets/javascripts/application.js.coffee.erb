@@ -78,11 +78,11 @@ Leo.Pager = do ->
   gotoPage = (dir) ->
     switch dir
       when 'next'
-        unless pageIndex == pages.length
-          window.location = pages[pageIndex]
+        unless pageIndex == pages.length - 1
+          window.location = pages[pageIndex + 1]
       when 'prev'
-        unless pageIndex == 1
-          window.location = pages[pageIndex - 2]
+        unless pageIndex == 0
+          window.location = pages[pageIndex - 1]
 
   init: init
 

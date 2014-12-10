@@ -9,9 +9,13 @@ Leo is a Markdown, Middleman-powered writing environment. It allows you to quick
 ---
 title: Introduction # The page title
 type: page # Classify this document as a page
-priority: 1 # The priority number for proper sorting in the sidebar
 ---
 ```
+
+Priority
+--------
+
+In `data/priority.yml`, add the order of _all_ of your pages (including nested pages), so that the sidebar is ordered correctly and the pager navigation works.
 
 Nested Pages
 ------------
@@ -27,7 +31,6 @@ In that root page, add some more Frontmatter to the top of the page:
 ---
 title: Parent Page # The page title
 type: page # Classify this document as a page
-priority: 2 # The priority number for proper sorting in the sidebar
 children: true # Tells Leo that this page has nested child pages
 ---
 ```
@@ -38,7 +41,6 @@ Next, add your nested pages in that sub-directory, and add the following Frontma
 ---
 title: Introduction # The page title
 type: page # Classify this document as a page
-priority: 3 # The priority number for proper sorting in the sidebar
 nested: true # Tells Leo this is a nested page
 parent: Parent Page # The parent page title that this is nested under
 ---
