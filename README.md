@@ -17,6 +17,16 @@ Priority
 
 In `data/priority.yml`, add the order of _all_ of your pages (including nested pages), so that the sidebar is ordered correctly and the pager navigation works.
 
+For example:
+
+```yaml
+- Welcome
+- Example
+- Parent
+- Child
+- Another Child
+```
+
 Nested Pages
 ------------
 
