@@ -1,6 +1,22 @@
 Changelog
 =========
 
+1.8.0 - 2014-12-10
+------------------
+
+### Added
+
+- The ability to set priority via `data/priority.yml` file
+- The `s` keyboard shortcut for opening the sidebar
+
+### Removed
+
+- The `priority` flag in the frontmatter of Markdown files
+
+### Fixed
+
+- Nothing
+
 1.7.8 - 2014-08-08
 ------------------
 
