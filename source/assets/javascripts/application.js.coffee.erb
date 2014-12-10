@@ -121,3 +121,11 @@ jQuery ($) ->
     $(@).toggleClass('is-active')
     $('body').toggleClass('is-sidebar-open')
     $('.sidebar').toggleClass('is-open')
+
+  $(document).on 'keyup', (event) ->
+    switch event.which
+      # 's' keyboard shortcut
+      when 83
+        $('.toggle').toggleClass('is-active')
+        $('body').toggleClass('is-sidebar-open')
+        $('.sidebar').toggleClass('is-open')
