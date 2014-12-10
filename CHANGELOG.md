@@ -1,6 +1,21 @@
 Changelog
 =========
 
+1.8.1 - 2014-12-10
+------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Set the priority of page to the end if it's not specified
+
 1.8.0 - 2014-12-10
 ------------------
 
