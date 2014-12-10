@@ -1,6 +1,21 @@
 Changelog
 =========
 
+1.9.0 - 2014-12-10
+------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Prevents identically named file clashes by namespacing in `data/priority.yml`
+
 1.8.1 - 2014-12-10
 ------------------
 

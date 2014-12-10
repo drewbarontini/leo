@@ -23,9 +23,11 @@ For example:
 - Welcome
 - Example
 - Parent
-- Child
-- Another Child
+- Parent - Child
+- Parent - Another Child
 ```
+
+**Note** Nested pages _must_ have the `Parent - ` title for its parent prefixed in the YAML file to avoid identically named file clashes.
 
 Nested Pages
 ------------
@@ -49,7 +51,7 @@ Next, add your nested pages in that sub-directory, and add the following Frontma
 
 ```yaml
 ---
-title: Introduction # The page title
+title: Child Page # The page title
 type: page # Classify this document as a page
 nested: true # Tells Leo this is a nested page
 parent: Parent Page # The parent page title that this is nested under
