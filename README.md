@@ -27,7 +27,7 @@ For example:
 - Parent - Another Child
 ```
 
-**Note** Nested pages _must_ have the `Parent - ` title for its parent prefixed in the YAML file to avoid identically named file clashes.
+**Note** Nested pages _must_ have the `Parent - ` title with its parent prefixed in the YAML file to avoid identically named file clashes.
 
 Nested Pages
 ------------
