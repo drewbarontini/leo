@@ -1,6 +1,21 @@
 Changelog
 =========
 
+1.9.5 - 2015-01-23
+------------------
+
+### Added
+
+- Better comments in Ruby files
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 1.9.4 - 2015-01-23
 ------------------
 
