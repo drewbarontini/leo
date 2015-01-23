@@ -1,6 +1,21 @@
 Changelog
 =========
 
+1.9.4 - 2015-01-23
+------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Moved `config.rb` helpers to `helpers/custom_helpers.rb` Ruby module
+
 1.9.3 - 2014-12-10
 ------------------
 
