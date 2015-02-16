@@ -1,6 +1,21 @@
 Changelog
 =========
 
+2.0.1 - 2015-02-16
+------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Update Normalize to v3.0.2
+
 2.0.0 - 2015-02-16
 ------------------
 
