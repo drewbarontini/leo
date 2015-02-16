@@ -8,6 +8,11 @@ activate :livereload
 activate :minify_html
 activate :syntax
 
+activate :autoprefixer do |config|
+  config.browsers = ['last 2 versions', 'Explorer >= 10']
+  config.cascade = false
+end
+
 # ====================================
 #   Global Variables
 # ====================================
