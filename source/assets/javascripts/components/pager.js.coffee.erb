@@ -1,0 +1,99 @@
+# *************************************
+#
+#   Pager
+#   -> Page keyboard navigation
+#
+# *************************************
+#
+# @param id { string }
+#
+# *************************************
+
+@Leo.Pager = do ->
+
+  # -------------------------------------
+  #   Private Variables
+  # -------------------------------------
+
+  _pageIndex = 0
+  _pages     = []
+  _shortcuts =
+    'next' : 39
+    'prev' : 37
+
+  # -------------------------------------
+  #   Initialize
+  # -------------------------------------
+
+  init = ( id ) ->
+    _pageIndex = id
+
+    _getPages()
+    _setEventHandlers()
+
+  # -------------------------------------
+  #   Initialize
+  # -------------------------------------
+
+  _getPages = ->
+    <% get_pages.each do |p| %>
+      <% if build? %>
+      _pages.push( "<%= data.leo.subdirectory %><%= p.url %>" )
+      <% else %>
+      _pages.push( "<%= p.url %>" )
+      <% end %>
+    <% end %>
+
+  # -------------------------------------
+  #   Initialize
+  # -------------------------------------
+
+  _setEventHandlers = ->
+    $( document ).on 'keydown', ( event ) ->
+      switch _getKeyCode( event )
+        when _shortcuts.next then _gotoPage( 'next' )
+        when _shortcuts.prev then _gotoPage( 'prev' )
+
+  # -------------------------------------
+  #   Initialize
+  # -------------------------------------
+  #
+  # @param event { string }
+  #
+  # -------------------------------------
+
+  _getKeyCode = ( event ) ->
+    event    = event || window.event
+    charCode = event.keyCode || event.which
+
+    charCode
+
+  # -------------------------------------
+  #   Initialize
+  # -------------------------------------
+  #
+  # @param direction { string }
+  #
+  # -------------------------------------
+
+  _gotoPage = ( direction ) ->
+    switch direction
+      when 'next'
+        unless _pageIndex == _pages.length - 1
+          window.location = _pages[ _pageIndex + 1 ]
+      when 'prev'
+        unless _pageIndex == 0
+          window.location = _pages[ _pageIndex - 1 ]
+
+  # -------------------------------------
+  #   Public Methods
+  # -------------------------------------
+
+  init : init
+
+# -------------------------------------
+#   Usage
+# -------------------------------------
+#
+# Leo.Pager.init( $('body').data('id') )
+#

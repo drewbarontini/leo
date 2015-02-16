@@ -1,0 +1,53 @@
+# *************************************
+#
+#   Document Ready
+#
+# *************************************
+
+jQuery ($) ->
+
+  # -------------------------------------
+  #   Heading Links
+  # -------------------------------------
+
+  Leo.HeadingLinks.init
+    $elements : $( 'h2, h3, h4, h5, h6' )
+
+  # -------------------------------------
+  #   Read Time
+  # -------------------------------------
+
+  <% if data.leo.reading_time %>
+  Leo.readTime
+    $element        : $( '.content h1' )
+    text            : $( '.content' ).text()
+    wordsPerMinute  : 200
+  <% end %>
+
+  # -------------------------------------
+  #   Pager
+  # -------------------------------------
+
+  Leo.Pager.init( $( 'body' ).data( 'id' ) )
+
+  # -------------------------------------
+  #   Sidebar Toggle
+  # -------------------------------------
+
+  # ----- Click ----- #
+
+  $( '.toggle' ).on 'click', ( event ) ->
+    event.preventDefault()
+
+    $(@).toggleClass( 'is-active' )
+    $( 'body' ).toggleClass( 'is-sidebar-open' )
+    $( '.sidebar' ).toggleClass( 'is-open' )
+
+  # ----- Keyboard ----- #
+
+  $( document ).on 'keyup', ( event ) ->
+    switch event.which
+      when 83
+        $( '.toggle' ).toggleClass('is-active')
+        $( 'body' ).toggleClass('is-sidebar-open')
+        $( '.sidebar' ).toggleClass('is-open')
