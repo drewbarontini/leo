@@ -8,13 +8,14 @@
 // -------------------------------------
 //
 // %header.header
-//   %h1.header-title Title
+//
+//   %h1.header-title
 //
 // *************************************
 
 .header
-  @extend .boxSizing
   background: $header-background
+  box-sizing: border-box
   height: $header-height
   position: relative
 
@@ -31,9 +32,11 @@
   margin-top: 0
   padding-left: $b-space - 0.2 // FIXME: Magic number!
   text-transform: uppercase
+
   > a
     border: 0
     color: $header-title-link-color
+
     &:hover,
     &:focus
       color: $header-title-link-hover-color

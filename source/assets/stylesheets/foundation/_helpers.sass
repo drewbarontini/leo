@@ -1,7 +1,7 @@
 // *************************************
 //
 //   Helpers
-//   -> Functions, Mixins, Animations
+//   -> Functions, Mixins, Extends, Animations
 //
 // *************************************
 
@@ -31,31 +31,37 @@
   @media #{$media} and ($query: $val)
     @content
 
-// ----- Transform ----- //
-
-=transform($args)
-  -webkit-transform: $args
-  -ms-transform: $args
-  transform: $args
-
-// ----- Transition Transform ----- //
-
-=transition-transform($args...)
-  -webkit-transition: -webkit-transform $args
-  transition: -webkit-transform $args
-  transition: -moz-transform $args
-  transition: -ms-transform $args
-  transition: transform $args
-
-// ----- Transition ----- //
-
-=transition($args)
-  -webkit-transition: $args
-  transition: $args
-
 // -------------------------------------
-//   Animations
+//   Extends
 // -------------------------------------
 
-// ...
+// ----- Clearfix ----- //
 
+.group::after
+  clear: both
+  content: ''
+  display: table
+
+// ----- Image Replacement ----- //
+
+.ir
+  background-color: transparent
+  border: 0
+  overflow: hidden
+  &::before
+    content: ''
+    display: block
+    width: 0
+    height: 150%
+
+// ----- Semantic Hide ----- //
+
+.srt
+  border: 0
+  clip: rect(0 0 0 0)
+  height: 1px
+  margin: -1px
+  overflow: hidden
+  padding: 0
+  position: absolute
+  width: 1px

@@ -3,28 +3,31 @@
 //   Sidebar
 //   -> Page listing
 //
-// *************************************
 // -------------------------------------
 //   Template (Haml)
 // -------------------------------------
 //
-// %aside.sidebar
-//   %a.sidebar-link{ href: '#' } Link
+// %aside.sidebar(open)
+//
+//   %a.sidebar-link
 //
 // *************************************
 
 .sidebar
-  @extend .boxSizing
+
   @if $sidebar-collapsible
-    +transform(translateX(-100%))
-    +transition-transform(0.3s ease-in-out)
+    transform: translateX(-100%)
+    transition: transform 0.3s ease-in-out
   @else
-    +transform(translateX(-100%))
-    +transition-transform(0.3s ease-in-out)
+    transform: translateX(-100%)
+    transition: transform 0.3s ease-in-out
+
     +respond-to($breakpoint-s)
-      +transform(translateX(0))
+      transform: translateX(0)
+
   background: $sidebar-background
   bottom: 0
+  box-sizing: border-box
   left: 0
   overflow: scroll
   position: fixed
@@ -38,10 +41,10 @@
 
 @if $sidebar-collapsible
   .sidebar.is-open
-    +transform(translateX(0))
+    transform: translateX(0)
 @else
   .sidebar.is-open
-    +transform(translateX(0))
+    transform: translateX(0)
 
 // -------------------------------------
 //   Scaffolding
@@ -56,6 +59,7 @@
   font-family: $b-fontFamily-heading
   font-size: $sidebar-link-fontSize
   padding: $b-space-s $b-space
+
   &:hover,
   &:focus
     background: $sidebar-link-hover-background
@@ -82,4 +86,3 @@
 
 .sidebar-nav-sub.is-active
   display: block
-

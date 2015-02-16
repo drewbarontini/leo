@@ -14,29 +14,38 @@ html
 
 body
   font-size: 100%
+
   &.is-sidebar-open
     overflow-y: hidden
     position: fixed
+
     +respond-to($breakpoint-s)
       position: static
 
 .content
-  +transform(translateX(0))
-  +transition-transform(0.3s ease-in-out)
   margin-bottom: $b-space-xl
   padding-top: $b-space-xs
+  transform: translateX(0)
+  transition: transform 0.3s ease-in-out
+
   @if $sidebar-collapsible
+
     .is-sidebar-open &
-      +transform(translateX($sidebar-width))
       margin-left: 0
+      transform: translateX($sidebar-width)
+
       +respond-to($breakpoint-s)
-        +transform(translateX(0))
         margin-left: $sidebar-width
+        transform: translateX(0)
+
   @else
+
     .is-sidebar-open &
-      +transform(translateX($sidebar-width))
+      transform: translateX($sidebar-width)
+
       +respond-to($breakpoint-s)
-        +transform(translateX(0))
+        transform: translateX(0)
+
     +respond-to($breakpoint-s)
       margin-left: $sidebar-width
 
@@ -90,9 +99,11 @@ h6, .h6
   line-height: 1.2
   margin-bottom: $b-space-s
   margin-top: $b-space
+
   @if $sidebar-collapsible == false
     +respond-to($breakpoint-s)
       margin-top: 0
+
   +respond-to($breakpoint-s)
     margin-top: $b-space
 
@@ -102,12 +113,15 @@ h4, .h4,
 h5, .h5,
 h6, .h6
   position: relative
+
   +respond-to($breakpoint-s)
+
     &:hover > a
       display: block
 
 h1, .h1
   font-size: 200%
+
   > b
     color: $c-subdue
     display: block
@@ -143,6 +157,7 @@ a
   color: $c-highlight
   text-decoration: none
   transition: all 0.3s ease-in-out
+
   &:hover,
   &:focus
     border-bottom-color: $c-highlight

@@ -7,16 +7,16 @@
 //   Template (Haml)
 // -------------------------------------
 //
-// .card[.card--thin]
+// .card[thin]
 //   / ...
 //
 // *************************************
 
 .card
-  @extend .boxSizing
   background: $c-background-invert
   border-radius: $b-borderRadius
   box-shadow: $b-boxShadow
+  box-sizing: border-box
   padding: $b-space
   position: relative
 
