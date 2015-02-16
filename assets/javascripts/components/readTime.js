@@ -1,0 +1,1 @@
+(function(){this.Leo.readTime=function(e){var t;return t=Math.ceil(e.text.split(" ").length/e.wordsPerMinute),e.$element.append("<b>"+t+" minute read</b>")}}).call(this);
