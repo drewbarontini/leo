@@ -7,7 +7,6 @@ Changelog
 ### Added
 
 - Autoprefixer
-- Bower
 
 ### Removed
 
