@@ -45,7 +45,7 @@ Changelog
 ### Fixed
 
 - Update Middleman to `3.3.8`
-- Update MVCSS to 4.0.8
+- Update MVCSS to `4.0.8`
 - Use glob importing in `application.sass`
 - Refactor JavaScript organization
 
